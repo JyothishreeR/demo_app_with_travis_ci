@@ -52,9 +52,6 @@ RSpec.describe User, :type => :model do
   	end
 
   	context "reset status" do 
-  		# before(:each) do 
-  		# 	@user = FactoryGirl.create(:user, locked_at: Date.today, reason: "invalied login", deactivated_date: Date.today, locked: "locked", failed_attempts: 5)
-  		# end
       let!(:user) { FactoryGirl.create(:user, locked_at: Date.today, reason: "invalied login", deactivated_date: Date.today, locked: "locked", failed_attempts: 5) }
 
   		it "set locked_at to nil" do 
