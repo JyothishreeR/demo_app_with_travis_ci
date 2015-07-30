@@ -3,7 +3,8 @@ rvm:
  - "2.2.0"
  - rbx
 # uncomment this line if your project needs to run something other than `rake`:
-script: bundle exec rspec spec
 
 before_script:
   - mysql -e 'create database myapp_test;'
+
+script: bundle exec rspec spec
